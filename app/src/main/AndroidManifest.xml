@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.qxy.movierank">
+    package="com.qxy.nav_java">
 
     <application
         android:allowBackup="true"
@@ -11,11 +11,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MovieRank"
+        android:theme="@style/Theme.Navjava"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,10 +25,4 @@
         </activity>
     </application>
 
-    <queries>
-        <!--允许查询抖音和抖音极速版的软件包信息-->
-        <package android:name="com.ss.android.ugc.aweme" />
-        <package android:name="com.ss.android.ugc.aweme.lite" />
-    </queries>
-    <!-- //TEST WHETHER GIT COMMAND WORKS PROPERLY-->
 </manifest>
